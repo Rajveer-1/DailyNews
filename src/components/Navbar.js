@@ -9,17 +9,17 @@ export class Navbar extends Component {
         <nav className="navbar navbar-expand-lg bg-light">
           <div className="container-fluid">
             <img src={require('./NewsImage.jpg')} className="navbar-logo" alt="" />
-            <a className="navbar-brand" href="#" style={{color:"black"}}>{title}</a>
+            <a className="navbar-brand" style={{color:"black"}}>{title}</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" href="#" style={{color:"black"}}>Home</a>
+                  <a className="nav-link active"  style={{color:"black"}}>Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#" style={{color:"black"}}>About</a>
+                  <a className="nav-link"  style={{color:"black"}}>About</a>
 
                 </li>
               </ul>
