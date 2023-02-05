@@ -112,11 +112,11 @@ export class News extends Component {
                 <h1 className="text-center " style={{ color: 'white' }}>Get the Latest News first</h1>
                 {this.state.loading&&<Spinner/>}
                 <div className="row ">
-                    {!this.state.loading && this.state.articles.map((element) => {
+                    {this.articles?!this.state.loading && this.state.articles.map((element) => {
                         return <div className="col md-4" key={element.url}>
                             <NewsApp title={!element.title ? element.title.slice(0, 40) : ""} description={element.description ? element.description.slice(0, 88) : ""} imageUrl={element.urlToImage} newsUrl={element.url} />
                         </div> 
-                  })}
+                  }):null}
 
 
                 
